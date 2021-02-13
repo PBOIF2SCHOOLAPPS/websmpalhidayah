@@ -15,11 +15,12 @@
     font-family: 'Montserrat', sans-serif;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
     height: 400px;
+    opacity: 0.9;
 }
 
 .nav-custom-home p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 28px;
+    font-size: 18px;
 }
 
 .jumbotron .display-4 {
@@ -34,6 +35,10 @@
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
     font-weight: thin;
     margin-top: 1em;
+}
+
+.about-home p {
+    font-size: 12px;
 }
 
 
