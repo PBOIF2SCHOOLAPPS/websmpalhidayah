@@ -5,3 +5,60 @@
 .custom-text {
     background-color: rgba(3, 80, 111, 1);
 }
+
+
+/* HOME */
+
+.jumbotron {
+    background-image: url(../img/jumbotron_sekolah.jpg);
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    height: 400px;
+}
+
+.nav-custom-home p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+}
+
+.jumbotron .display-4 {
+    color: white;
+    font-size: 38px;
+    margin-top: 75px;
+}
+
+.jumbotron p {
+    font-size: 28px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    font-weight: thin;
+    margin-top: 1em;
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 992px) {
+    .jumbotron {
+        height: 700px;
+    }
+    .jumbotron .display-4 {
+        font-size: 62px;
+    }
+}
+
+
+/* Tablet */
+
+@media (min-width: 768px) {
+    .jumbotron {
+        height: 800px;
+    }
+    .jumbotron .display-4 {
+        margin-top: 150px;
+    }
+}
+
+
+/* HOME */
