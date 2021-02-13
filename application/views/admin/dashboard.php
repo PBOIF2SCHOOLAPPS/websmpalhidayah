@@ -9,7 +9,7 @@
     <!-- Content Row -->
     <div class="row">
 
-        <!-- CART BERANDA -->
+        <!-- CART DATA GURU -->
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card shadow h-100 py-2">
                 <div class="card-body">
@@ -18,7 +18,7 @@
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1 ">
                                 Data Guru
                             </div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $guru?></div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-chalkboard-teacher fa-2x text-gray-300"></i>
@@ -28,7 +28,7 @@
             </div>
         </div>
 
-        <!-- CART BERANDA -->
+        <!-- CART DATA SISWA -->
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card shadow h-100 py-2">
                 <div class="card-body">
@@ -37,7 +37,7 @@
                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                 Data Siswa
                             </div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $siswa?></div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-user-graduate fa-2x text-gray-300"></i>
@@ -48,7 +48,6 @@
         </div>
 
         <!-- CART DATA ORANG TUA -->
-
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card shadow h-100 py-2">
                 <div class="card-body">
@@ -57,7 +56,7 @@
                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                 Data Orang Tua
                             </div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $orangtua?></div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-user-friends fa-2x text-gray-300"></i>
