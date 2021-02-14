@@ -103,4 +103,14 @@ class dataGuru extends CI_Controller
         $this->form_validation->set_rules('jenis_kelamin','jenis kelamin','required');
         $this->form_validation->set_rules('status_guru','status guru','required');
     }
+
+    public function deleteData($id_guru) {
+        $where = array ('id_guru' => $id_guru);
+        $this->smpalhidayahModel->delete_data($where, 'data_guru');
+        $this->session->set_flashdata('pesan','<div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Data berhasil dihapus!</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+             </div>');
+             redirect('admin/dataGuru');
+    }
 }
