@@ -4,9 +4,9 @@
         <h1 class="h3 mb-0 text-gray-800"><?php echo $title ?></h1>
     </div>
 
-    <a class="btn btn-sm btn-success mb-3" href="<?php echo base_url('admin/dataGuru/tambah_data') ?>"><i class="fas fa-plus"> Tambah Data</i></a>
-
-    <table class="table table-bordered table-striped">
+    <a class="btn btn-sm btn-success mb-3" href="<?php echo base_url('admin/dataGuru/tambahData') ?>"><i class="fas fa-plus"> Tambah Data</i></a>
+    <?php echo $this ->session->flashdata('pesan')?>
+    <table class="table table-bordered table-striped mt-2">
         <tr>
             <th class="text-center">No</th>
             <th class="text-center">Id Guru</th>
@@ -27,8 +27,8 @@
                 <td><?php echo $g->status_guru?></td>
                 <td>
                     <center>
-                        <a class="btn btn-sm btn-primary" href="<?php echo base_url('admin/dataGuru/update_data/'.$g->id_guru) ?>"><i class="fas fa-edit"></i></a>
-                        <a onclick="return confirm ('Apakah anda yakin ingin mengapus data ini?')" class="btn btn-sm btn-danger" href="<?php echo base_url('admin/dataGuru/delete_data/'.$g->id_guru) ?>"><i class="fas fa-trash"></i></a>
+                        <a class="btn btn-sm btn-primary" href="<?php echo base_url('admin/dataGuru/updateData/'.$g->id_guru) ?>"><i class="fas fa-edit"></i></a>
+                        <a onclick="return confirm ('Apakah anda yakin ingin mengapus data ini?')" class="btn btn-sm btn-danger" href="<?php echo base_url('admin/dataGuru/deleteData/'.$g->id_guru) ?>"><i class="fas fa-trash"></i></a>
                     </center>
                 </td>
             </tr>

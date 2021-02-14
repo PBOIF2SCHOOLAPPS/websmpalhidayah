@@ -6,6 +6,7 @@
 
     <div class="card">
         <div class="card-body">
+            
             <form action="<?php echo base_url('admin/dataGuru/tambahDataAksi') ?>" method="POST">
                 <div class="form-group">
                     <label>Id Guru</label>
