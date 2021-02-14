@@ -41,9 +41,9 @@
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="<?php echo base_url('admin/data_guru'); ?>">Data Guru</a>
-                        <a class="collapse-item" href="<?php echo base_url('admin/data_siswa'); ?>">Data Siswa</a>
-                        <a class="collapse-item" href="<?php echo base_url('admin/data_orangtua'); ?>">Data Orang Tua</a>
+                        <a class="collapse-item" href="<?php echo base_url('admin/dataGuru'); ?>">Data Guru</a>
+                        <a class="collapse-item" href="<?php echo base_url('admin/dataSiswa'); ?>">Data Siswa</a>
+                        <a class="collapse-item" href="<?php echo base_url('admin/dataOrangtua'); ?>">Data Orang Tua</a>
                     </div>
                 </div>
             </li>
