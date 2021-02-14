@@ -44,7 +44,7 @@ class dataOrangtua extends CI_Controller
             <strong>Data berhasil ditambahkan!</strong>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>');
-            redirect('dataOrangtua');
+            redirect('admin/dataOrangtua');
         }
     }
 

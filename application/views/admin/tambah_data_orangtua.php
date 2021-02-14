@@ -5,7 +5,7 @@
     </div>
      <div class="card">
         <div class="card-body">
-            <form action="<?php echo base_url('admin/dataOrangtua/tambahDataAksi') ?>" method="POST">
+            <form action="<?php echo base_url('admin/dataOrangtua/tambah_data_aksi') ?>" method="POST">
                 <div class="form-group">
                     <label>Id Orangtua</label>
                     <input type="text" name="id_orangtua" class="form-control">
