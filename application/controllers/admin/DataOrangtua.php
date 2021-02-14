@@ -55,5 +55,17 @@ class dataOrangtua extends CI_Controller
         
     }
 
+<<<<<<< HEAD
+=======
+    public function deleteData($id_orangtua) {
+        $where = array ('id_orangtua' => $id_orangtua);
+        $this->smpalhidayahModel->delete_data($where, 'data_orangtua');
+        $this->session->set_flashdata('pesan','<div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Data berhasil dihapus!</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+             </div>');
+             redirect('admin/dataOrangtua');
+    }
+>>>>>>> 61356d8798ec37221e257db5810fb2c17e4eac2f
 }
 ?>
