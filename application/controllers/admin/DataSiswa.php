@@ -51,8 +51,8 @@ class dataSiswa extends CI_Controller
 
     public function _rules()
     {
-        $this->form_validation->set_rules('id_orangtua', 'id orangtua', 'required');
-        $this->form_validation->set_rules('nama_orangtua', 'nama orangtua', 'required');
-        $this->form_validation->set_rules('alamat_orangtua', 'alamat_orangtua', 'required');
+        $this->form_validation->set_rules('id_siswa', 'id siswa', 'required');
+        $this->form_validation->set_rules('nama_siswa', 'nama siswa', 'required');
+        $this->form_validation->set_rules('alamat_siswa', 'alamat_siswa', 'required');
     }
 }
