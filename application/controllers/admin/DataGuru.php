@@ -46,8 +46,8 @@ class dataGuru extends CI_Controller
             $this->session->set_flashdata('pesan','<div class="alert alert-success alert-dismissible fade show" role="alert">
             <strong>Data berhasil ditambahkan!</strong>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-             </div>');
-             redirect('admin/dataGuru');
+            </div>');
+            redirect('admin/dataGuru');
         }
     }
 
@@ -104,4 +104,3 @@ class dataGuru extends CI_Controller
         $this->form_validation->set_rules('status_guru','status guru','required');
     }
 }
-?>
