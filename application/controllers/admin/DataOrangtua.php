@@ -54,5 +54,6 @@ class dataOrangtua extends CI_Controller
         $this->form_validation->set_rules('alamat_orangtua','alamat_orangtua','required');
         
     }
+
 }
 ?>

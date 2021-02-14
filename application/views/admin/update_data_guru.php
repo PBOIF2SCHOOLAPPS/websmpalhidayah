@@ -40,7 +40,7 @@
 
                 <button type="submit" class="btn btn-success">Submit</button>
             </form>
-            <?php foreach; ?>
+            <?php endforeach; ?>
         </div>
     </div>
     
