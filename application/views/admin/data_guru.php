@@ -4,7 +4,7 @@
         <h1 class="h3 mb-0 text-gray-800"><?php echo $title ?></h1>
     </div>
 
-    <a class="btn btn-sm btn-success mb-3" href="<?php echo base_url('admin/dataGuru/create_data') ?>"><i class="fas fa-plus"> Tambah Data</i></a>
+    <a class="btn btn-sm btn-success mb-3" href="<?php echo base_url('admin/dataGuru/tambah_data') ?>"><i class="fas fa-plus"> Tambah Data</i></a>
 
     <table class="table table-bordered table-striped">
         <tr>

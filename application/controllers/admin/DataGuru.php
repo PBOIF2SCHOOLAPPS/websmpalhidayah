@@ -11,4 +11,52 @@ class dataGuru extends CI_Controller
         $this->load->view('admin/data_guru', $data);
         $this->load->view('template_admin/footer', $data);
     }
+
+    public function tambah_data()
+    {
+        $data['title_header'] = "Admin | SMP AL-HIDAYAH";
+        $data['title'] = "Tambah Data Guru";
+        $this->load->view('template_admin/header', $data);
+        $this->load->view('template_admin/bar');
+        $this->load->view('admin/tambah_data_guru', $data);
+        $this->load->view('template_admin/footer', $data);
+    }
+
+    public function tambah_data_aksi() {
+        $this->_rules();
+
+        if($this->form_validation->run()== FALSE) {
+            $this->tambah_data();
+        } else {
+            $id_guru    =$this->input->post('id_guru');
+            $nama_guru    =$this->input->post('nama_guru');
+            $alamat    =$this->input->post('alamat');
+            $jenis_kelamin    =$this->input->post('jenis_kelamin');
+            $status_guru    =$this->input->post('status_guru');
+
+            $data=array(
+                'id_guru'   => $id_guru,
+                'nama_guru'   => $nama_guru,
+                'alamat'   => $alamat,
+                'jenis_kelamin'   => $jenis_kelamin,
+                'status_guru'   => $status_guru,
+            );
+
+            $this->smpalhidayahModel->insert_data($data,'data_guru');
+            $this->session->set_flashdata('pesan','<div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Data berhasil ditambahkan!</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+             </div>');
+             redirect('dataGuru');
+        }
+    }
+
+    public function _rules() {
+        $this->form_validation->set_rules('id_guru','id guru','required');
+        $this->form_validation->set_rules('nama_guru','nama guru','required');
+        $this->form_validation->set_rules('alamat','alamat','required');
+        $this->form_validation->set_rules('jenis_kelamin','jenis kelamin','required');
+        $this->form_validation->set_rules('status_guru','status guru','required');
+    }
 }
+?>
