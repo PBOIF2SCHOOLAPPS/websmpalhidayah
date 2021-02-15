@@ -1,10 +1,9 @@
 <!-- JUMBOTRON -->
-<div class="jumbotron imgjbt">
-    <h1 class="display-4">Hello, world!</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+<div class="jumbotron text-center" id="jumbotron">
+    <h1 class="display-4">SELAMAT DATANG</h1>
+    <p class="lead">di SMP AL-HIDAYAH</p>
     <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <a class="btn btn-primary btn-lg" href="#" role="button">MASUK</a>
 </div>
 
 <!-- Content -->
@@ -12,11 +11,11 @@
 
     <div class="row about-home">
         <!-- about -->
-        <div class="col-span-2 mr-auto">
-            <h2>About</h2>
+        <div class="col-span-2 mx-auto p-5" id="tentang">
+            <h2>Tentang</h2>
         </div>
         <div class="flex row justify-content-center about-home">
-            <div class="align-self-center col-sm figure-caption overflow-hidden">
+            <div class="align-self-center col-sm figure-caption overflow-hidden p-2">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -24,15 +23,16 @@
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div>
-            <div class="col-sm">
-                <img src="<?php echo base_url() ?>/assets/img/jumbotron1.jpeg" class="figure-img img-fluid rounded" alt="about">
+            <div class="col-sm text-center p-2">
+                <img src="<?php echo base_url() ?>/assets/img/pendiri.jpeg" class="figure-img img-fluid rounded" width="170px" alt="about">
             </div>
         </div>
         <!-- about -->
 
         <!-- Ekstrakurikuler -->
-        <div class="col-span-2 ml-auto">
-            <h2>Ekstrakurikuler</h2>
+
+        <div class="col-span-2 mx-auto p-5" id="kegiatan">
+            <h2>Kegiatan</h2>
         </div>
         <div class="flex row justify-content-center about-home">
             <div class="col-sm">
@@ -77,7 +77,7 @@
         <!-- Ekstrakurikuler -->
 
         <!-- pencapapaian -->
-        <div class="col-span-2 mr-auto">
+        <div class="col-span-2 mx-auto p-5" id="dokumentasi">
             <h2>Pencapaian</h2>
         </div>
         <div class="flex row justify-content-center about-home">

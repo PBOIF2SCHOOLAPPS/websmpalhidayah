@@ -24,9 +24,23 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="<?php echo base_url() ?>assets/img/logo.png" width="30" height="auto" class="d-inline-block align-top" alt="" loading="lazy">
-            SMP AL-HIDAYAH
-        </a>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#jumbotron">
+                <img src="<?php echo base_url() ?>assets/img/logo.png" width="40" height="auto" class="d-inline-block align-top" alt="" loading="lazy">
+
+            </a>
+            <a href="#jumbotron" class="navbar-brand font-weight-bold">SMP AL-HIDAYAH</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto font-weight-bold">
+                    <a class="nav-link " href="#tentang">Tentang</span></a>
+                    <a class="nav-link" href="#kegiatan">Kegiatan</a>
+                    <a class="nav-link" href="#dokumentasi">Pencapaian</a>
+                </div>
+            </div>
+        </div>
     </nav>
