@@ -24,9 +24,11 @@ class Login extends CI_Controller
                 </div>');
                 redirect('login');
             } else {
+                
                 switch ($cek->hak_akses) {
                     case 1:
                         redirect('admin/dashboard');
+                        
                         break;
 
                     case 2:
@@ -35,11 +37,13 @@ class Login extends CI_Controller
 
                     case 3:
                         redirect('orangtua/dashboard');
+
                         break;
 
                     default:
                         break;
                 }
+
             }
         }
     }
