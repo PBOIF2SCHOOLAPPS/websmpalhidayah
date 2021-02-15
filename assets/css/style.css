@@ -9,8 +9,8 @@
 
 /* HOME */
 
-.jumbotron {
-    background-image: url(../img/jumbotron_sekolah.jpg);
+.jumbotron .imgjbt {
+    background-image: url(../img/jumbotron1.jpeg);
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
