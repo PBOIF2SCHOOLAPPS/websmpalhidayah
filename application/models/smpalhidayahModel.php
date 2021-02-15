@@ -55,4 +55,9 @@ class smpalhidayahModel extends CI_Model
             return FALSE;
         }
     }
+
+    public function insert_data_tengok(Type $var = null)
+    {
+        # code...
+    }
 }

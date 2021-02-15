@@ -1,5 +1,5 @@
 <body>
-
+    <?= $ ?>
     <div class="container" style="margin:120px auto 100px;">
         <h3 class="text-center text-dark mb-5 ">Konfirmasi Jadwal Tengok <br> SMP AL-HIDAYAH RAWAMERTA</h3>
         <div class="container konfirmasi-tengok">
@@ -21,14 +21,16 @@
                       <td>23/04/2020</td>
                        <td>Tatang Sulaeman</td>
                        <td>Sulthon Naufal</td>
-                       <form>
+                      
                        <td>
-                            <a href="#"><button type="button" class="btn btn-outline-success">Terima</button></a>
+                       <input type="hidden" name="id_jadwal" value="id_jadwal">
+                        <a href="#"  class="btn btn-outline-success" >Terima</button>
+                        <input type="hidden">
                         </td>
                         <td>
-                            <a href="#"><button type="button" class="btn btn-outline-warning">Tolak</button></a>
+                            <button type="submit" class="btn btn-outline-warning" value="2" name="hak_akses">Tolak</button>
                         </td>
-                    </form>
+                  
                     </tr>
 
                     <tr>
