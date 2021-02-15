@@ -28,13 +28,18 @@ class smpalhidayahModel extends CI_Model
         $password = set_value('password');
 
         $result = $this->db->where('username', $username)
-            ->where('password', md5($password))
+            ->where('password', $password)
             ->limit(1)
-            ->get('data_guru');
+            ->get('data_siswa');
 
         if ($result->num_rows() > 0) {
+            // var_dump("ada");
+            // die;
             return $result->row();
+            
         } else {
+            // var_dump("tidak ada");
+            // die;
             return FALSE;
         }
     }

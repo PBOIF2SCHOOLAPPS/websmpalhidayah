@@ -14,7 +14,7 @@ class Login extends CI_Controller
         } else {
             $username = $this->input->post('username');
             $password = $this->input->post('password');
-
+            
             $cek = $this->smpalhidayahModel->cek_login($username, $password);
 
             if ($cek == FALSE) {
