@@ -9,4 +9,5 @@ class Dashboard extends CI_Controller
         $this->load->view('guru/dashboard', $data);
         $this->load->view('template/footer', $data);
     }
+
 }
