@@ -31,7 +31,7 @@
                 <img src="<?php echo base_url() ?>assets/img/logo.png" width="40" height="auto" class="d-inline-block align-top" alt="" loading="lazy">
 
             </a>
-            <a href="#jumbotron" class="navbar-brand font-weight-bold">SMP AL-HIDAYAH</a>
+            <a href="#jumbotron" class="navbar-brand font-weight-bold">AL-HIDAYAH</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

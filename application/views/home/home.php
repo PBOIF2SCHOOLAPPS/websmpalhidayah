@@ -1,9 +1,9 @@
 <!-- JUMBOTRON -->
 <div class="jumbotron text-center" id="jumbotron">
     <h1 class="display-4">SELAMAT DATANG</h1>
-    <p class="lead">di SMP AL-HIDAYAH</p>
+    <p class="lead">AL-HIDAYAH</p>
     <hr class="my-4">
-    <a class="btn btn-primary btn-lg" href="#" role="button">MASUK</a>
+    <a class="btn btn-success btn-lg" href="#" role="button">MASUK</a>
 </div>
 
 <!-- Content -->
@@ -35,8 +35,8 @@
             <h2>Kegiatan</h2>
         </div>
         <div class="flex row justify-content-center about-home">
-            <div class="col-sm">
-                <img src="<?php echo base_url() ?>/assets/img/jumbotron_sekolah.jpg" class="figure-img img-fluid rounded" alt="about">
+            <div class="col-sm text-center">
+                <img src="<?php echo base_url() ?>/assets/img/jumbotron_sekolah.jpg" class="figure-img img-fluid rounded" alt="about" id="img">
             </div>
             <div class="align-self-center col-sm figure-caption overflow-hidden">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -56,14 +56,14 @@
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div>
-            <div class="col-sm">
-                <img src="<?php echo base_url() ?>/assets/img/jumbotron_sekolah.jpg" class="figure-img img-fluid rounded" alt="about">
+            <div class="col-sm text-center">
+                <img src="<?php echo base_url() ?>/assets/img/jumbotron_sekolah.jpg" class="figure-img img-fluid rounded" alt="about" id="img">
             </div>
         </div>
 
         <div class="flex row justify-content-center about-home">
-            <div class="col-sm">
-                <img src="<?php echo base_url() ?>/assets/img/jumbotron_sekolah.jpg" class="figure-img img-fluid rounded" alt="about">
+            <div class="col-sm text-center">
+                <img src="<?php echo base_url() ?>/assets/img/jumbotron_sekolah.jpg" class="figure-img img-fluid rounded" alt="about" id="img">
             </div>
             <div class="align-self-center col-sm figure-caption overflow-hidden">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
