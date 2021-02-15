@@ -1,6 +1,6 @@
 <!-- JUMBOTRON -->
 <div class="jumbotron text-center" id="jumbotron">
-    <h1 class="display-4">SELAMAT DATANG</h1>
+    <h1 class="display-4">SELAMAT DATANG DI</h1>
     <p class="lead">AL-HIDAYAH</p>
     <hr class="my-4">
     <a class="btn btn-success btn-lg" href="<?php echo base_url('login'); ?>" role="button">MASUK</a>
@@ -16,12 +16,7 @@
         </div>
         <div class="flex row justify-content-center about-home">
             <div class="align-self-center col-sm figure-caption overflow-hidden p-2">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Al-Hidayah merupakan sebuah pesantren yang terletak di Desa Sukapura Kecamatan Rawamerta Kabupaten Karawang. Pesantren ini didirikan oleh K.H Abdul Ghoni Ma'ruf sebagai tempat tholabu'ilmi baik itu pengetahuan agama maupun pengetahuan umum. Pesantren ini memiliki misi untuk melaksanakan pembelajaran secara islami , aktif, kreatif dan inovatif,mendidik pribadi sehingga memilik akhlaqul karimah, memiliki kemantapan aqidah, keluasan ilmu dan keterampilan serta keluhuran budi pekeri
             </div>
             <div class="col-sm text-center p-2">
                 <img src="<?php echo base_url() ?>/assets/img/pendiri.jpeg" class="figure-img img-fluid rounded" width="170px" alt="about">
@@ -31,124 +26,95 @@
 
         <!-- Ekstrakurikuler -->
 
-        <div class="col-span-2 mx-auto p-5" id="kegiatan">
+        <div class="col-sm-10-span-2 mx-auto p-5" id="kegiatan">
             <h2>Kegiatan</h2>
         </div>
         <div class="flex row justify-content-center about-home">
             <div class="col-sm text-center">
-                <img src="<?php echo base_url() ?>/assets/img/jumbotron_sekolah.jpg" class="figure-img img-fluid rounded" alt="about" id="img">
+                <img src="<?php echo base_url() ?>/assets/img/kegiatan1.jpeg" class="figure-img img-fluid rounded" alt="about" id="img">
             </div>
-            <div class="align-self-center col-sm figure-caption overflow-hidden">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <div class="align-self-center text-center col-sm figure-caption overflow-hidden font-weight-bold">
+                Kegiatan Mengaji Santri perempuan
             </div>
         </div>
         <div class="flex row justify-content-center about-home">
-            <div class="align-self-center col-sm figure-caption overflow-hidden">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <div class="align-self-center col-sm figure-caption overflow-hidden text-center font-weight-bold">
+                Kegiatan pelantikan kegiatan kepramukaan SMP AL-Hidayah
             </div>
             <div class="col-sm text-center">
-                <img src="<?php echo base_url() ?>/assets/img/jumbotron_sekolah.jpg" class="figure-img img-fluid rounded" alt="about" id="img">
+                <img src="<?php echo base_url() ?>/assets/img/kegiatan2.jpeg" class="figure-img img-fluid rounded" alt="about" id="img">
             </div>
         </div>
 
         <div class="flex row justify-content-center about-home">
             <div class="col-sm text-center">
-                <img src="<?php echo base_url() ?>/assets/img/jumbotron_sekolah.jpg" class="figure-img img-fluid rounded" alt="about" id="img">
+                <img src="<?php echo base_url() ?>/assets/img/kegiatan3.jpeg" class="figure-img img-fluid rounded" alt="about" id="img">
             </div>
             <div class="align-self-center col-sm figure-caption overflow-hidden">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <img src="<?php echo base_url() ?>/assets/img/kegiatan4.jpeg" class="figure-img img-fluid rounded" alt="about" id="img">
+            </div>
+        </div>
+
+        <div class="col-sm-10-span-2 mx-auto p-4 font-weight-bold text-center">
+            Kegiatan Penyuluhan Kepatuhan Protokol Kesehatan
+        </div>
+        <div class="flex row justify-content-center about-home">
+            <div class="align-self-center col-sm figure-caption overflow-hidden">
+                <img src="<?php echo base_url() ?>/assets/img/kegiatan8.jpeg" class="figure-img img-fluid rounded" alt="about" id="img">
+            </div>
+            <div class="col-sm text-center ">
+                <img src="<?php echo base_url() ?>/assets/img/kegiatan6.jpeg" class="figure-img img-fluid rounded" alt="about" id="img">
+            </div>
+        </div>
+
+        <div class="flex row justify-content-center about-home ">
+            <div class="col-sm text-center">
+                <img src="<?php echo base_url() ?>/assets/img/kegiatan5.jpeg" class="figure-img img-fluid rounded" alt="about" id="img">
+            </div>
+            <div class="align-self-center col-sm figure-caption overflow-hidden">
+                <img src="<?php echo base_url() ?>/assets/img/kegiatan7.jpeg" class="figure-img img-fluid rounded" alt="about" id="img">
             </div>
         </div>
         <!-- Ekstrakurikuler -->
 
         <!-- pencapapaian -->
-        <div class="col-span-2 mx-auto p-5" id="dokumentasi">
-            <h2>Pencapaian</h2>
+        <div class="col-span-2 mx-auto p-5 text-center" id="dokumentasi">
+            <h2>Dokumentasi Kegiatan</h2>
+        </div>
+
+
+        <!-- </div>
+
+
+        <div class="flex row justify-content-center about-home">
+            <div class="col-sm">
+                <img src="<?php echo base_url() ?>/assets/img/kegiatan9.jpeg" class="figure-img bg-image hover-zoom img-fluid rounded" alt="about">
+            </div>
+            <div class="col-sm align-self-center">
+                <img src="<?php echo base_url() ?>/assets/img/kegiatan10.jpeg" class="figure-img img-fluid rounded w-100 h-auto" alt="about">
+            </div>
+            <div class="col-sm ">
+                <img src="<?php echo base_url() ?>/assets/img/kegiatan11.jpeg" class="figure-img img-fluid rounded w-100 h-auto" alt="about">
+            </div>
+            <div class="col-sm align-self-center">
+                <img src="<?php echo base_url() ?>/assets/img/kegiatan12.jpeg" class="figure-img img-fluid rounded w-100 h-auto" alt="about">
+            </div>
+
         </div>
         <div class="flex row justify-content-center about-home">
             <div class="col-sm">
-                <img src="<?php echo base_url() ?>/assets/img/jumbotron_sekolah.jpg" class="figure-img img-fluid rounded" alt="about">
+                <img src="<?php echo base_url() ?>/assets/img/kegiatan13.jpeg" class="figure-img img-fluid rounded w-100 h-auto" alt="about">
             </div>
             <div class="col-sm align-self-center">
-                <h6>Lorem, ipsum dolor.</h6>
-                <p>21/10/2020</p>
+                <img src="<?php echo base_url() ?>/assets/img/kegiatan14.jpeg" class="figure-img img-fluid rounded w-100 h-auto" alt="about">
             </div>
             <div class="col-sm ">
-                <img src="<?php echo base_url() ?>/assets/img/jumbotron_sekolah.jpg" class="figure-img img-fluid rounded" alt="about">
+                <img src="<?php echo base_url() ?>/assets/img/kegiatan16.jpeg" class="figure-img img-fluid rounded w-100 h-auto" alt="about">
             </div>
             <div class="col-sm align-self-center">
-                <h6>Lorem, ipsum dolor.</h6>
-                <p>21/10/2020</p>
+                <img src="<?php echo base_url() ?>/assets/img/kegiatan17.jpeg" class="figure-img img-fluid rounded w-100 h-auto" alt="about">
             </div>
-            <div class="col-sm">
-                <img src="<?php echo base_url() ?>/assets/img/jumbotron_sekolah.jpg" class="figure-img img-fluid rounded" alt="about">
-            </div>
-            <div class="col-sm align-self-center">
-                <h6>Lorem, ipsum dolor.</h6>
-                <p>21/10/2020</p>
-            </div>
-        </div>
-        <div class="flex row justify-content-center about-home">
-            <div class="col-sm">
-                <img src="<?php echo base_url() ?>/assets/img/jumbotron_sekolah.jpg" class="figure-img img-fluid rounded" alt="about">
-            </div>
-            <div class="col-sm align-self-center">
-                <h6>Lorem, ipsum dolor.</h6>
-                <p>21/10/2020</p>
-            </div>
-            <div class="col-sm ">
-                <img src="<?php echo base_url() ?>/assets/img/jumbotron_sekolah.jpg" class="figure-img img-fluid rounded" alt="about">
-            </div>
-            <div class="col-sm align-self-center">
-                <h6>Lorem, ipsum dolor.</h6>
-                <p>21/10/2020</p>
-            </div>
-            <div class="col-sm">
-                <img src="<?php echo base_url() ?>/assets/img/jumbotron_sekolah.jpg" class="figure-img img-fluid rounded" alt="about">
-            </div>
-            <div class="col-sm align-self-center">
-                <h6>Lorem, ipsum dolor.</h6>
-                <p>21/10/2020</p>
-            </div>
-        </div>
-        <div class="flex row justify-content-center about-home">
-            <div class="col-sm">
-                <img src="<?php echo base_url() ?>/assets/img/jumbotron_sekolah.jpg" class="figure-img img-fluid rounded" alt="about">
-            </div>
-            <div class="col-sm align-self-center">
-                <h6>Lorem, ipsum dolor.</h6>
-                <p>21/10/2020</p>
-            </div>
-            <div class="col-sm ">
-                <img src="<?php echo base_url() ?>/assets/img/jumbotron_sekolah.jpg" class="figure-img img-fluid rounded" alt="about">
-            </div>
-            <div class="col-sm align-self-center">
-                <h6>Lorem, ipsum dolor.</h6>
-                <p>21/10/2020</p>
-            </div>
-            <div class="col-sm">
-                <img src="<?php echo base_url() ?>/assets/img/jumbotron_sekolah.jpg" class="figure-img img-fluid rounded" alt="about">
-            </div>
-            <div class="col-sm align-self-center">
-                <h6>Lorem, ipsum dolor.</h6>
-                <p>21/10/2020</p>
-            </div>
-        </div>
+        </div> -->
         <!-- pencapaian -->
     </div>
 </div>
