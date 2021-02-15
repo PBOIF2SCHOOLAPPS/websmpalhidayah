@@ -1,9 +1,13 @@
-.custom-nav {
-    background-color: rgba(3, 80, 111, 1);
+html {
+    scroll-behavior: smooth;
 }
 
-.custom-text {
-    background-color: rgba(3, 80, 111, 1);
+
+/* Navbar */
+
+.navbar {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    opacity: 0.9;
 }
 
 
@@ -13,9 +17,15 @@
     background-image: url(../img/jumbotron_sekolah.jpg);
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
+    background-repeat: no-repeat;
+    background-position: center;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
     height: 400px;
     opacity: 0.9;
+}
+
+.jumbotron .lead {
+    font-size: 32px;
 }
 
 .nav-custom-home p {
@@ -27,6 +37,7 @@
     color: white;
     font-size: 38px;
     margin-top: 75px;
+    font-weight: bold;
 }
 
 .jumbotron p {
@@ -45,6 +56,9 @@
 /* DESKTOP */
 
 @media (min-width: 992px) {
+    .navbar {
+        height: 100px;
+    }
     .jumbotron {
         height: 700px;
     }
@@ -62,6 +76,21 @@
     }
     .jumbotron .display-4 {
         margin-top: 150px;
+    }
+}
+
+@media (max-width:320px) {
+    .jumbotron .display-4 {
+        font-size: 28px;
+    }
+    .jumbotron .lead {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:600px) {
+    #img {
+        width: 300px;
     }
 }
 
