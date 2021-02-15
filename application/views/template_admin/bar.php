@@ -43,23 +43,6 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="<?php echo base_url('admin/dataGuru'); ?>">Data Guru</a>
                         <a class="collapse-item" href="<?php echo base_url('admin/dataSiswa'); ?>">Data Siswa</a>
-                        <a class="collapse-item" href="<?php echo base_url('admin/dataOrangtua'); ?>">Data Orang Tua</a>
-                    </div>
-                </div>
-            </li>
-
-            <!-- Nav Pengelolaan -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-tasks"></i>
-                    <span>Pengelolaan</span>
-                </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="<?php echo base_url('admin/konfirmasi_jadwal'); ?>">Konfirmasi Jadwal</a>
-                        <!-- Optional jika sempat -->
-                        <a class="collapse-item" href="<?php echo base_url('admin/absensi'); ?>">Absensi</a>
-                        <a class="collapse-item" href="<?php echo base_url('admin/keungan'); ?>">Keuangan</a>
                     </div>
                 </div>
             </li>
@@ -67,20 +50,6 @@
             <!-- Divider -->
             <hr class="sidebar-divider">
 
-            <!-- Nav Laporan-->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-sticky-note"></i>
-                    <span>Laporan</span>
-                </a>
-                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="<?php echo base_url('admin/laporan_kuangan'); ?>">Laporan Keuangan</a>
-                        <a class="collapse-item" href="<?php echo base_url('admin/laporan_absensi_guru'); ?>">Laporan Absensi Guru</a>
-                        <a class="collapse-item" href="<?php echo base_url('admin/laporan_absensi_siswa'); ?>">Laporan Absensi Siswa</a>
-                    </div>
-                </div>
-            </li>
 
             <!-- Ubah Password Nav -->
             <li class="nav-item">

@@ -3,6 +3,30 @@ html {
 }
 
 
+/* LOGIN */
+
+.bg-cust-log {
+    background-color: rgba(3, 80, 111, 1);
+}
+
+.btn-cust-log {
+    background-color: rgba(3, 80, 111, 1);
+    text-align: center;
+    color: white;
+}
+
+
+/* LOGIN */
+
+.custom-nav {
+    background-color: rgba(3, 80, 111, 1);
+}
+
+.custom-text {
+    background-color: rgba(3, 80, 111, 1);
+}
+
+
 /* Navbar */
 
 .navbar {
@@ -96,3 +120,7 @@ html {
 
 
 /* HOME */
+
+#footer {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
