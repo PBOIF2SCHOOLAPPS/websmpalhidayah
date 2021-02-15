@@ -6,52 +6,54 @@
 
     <div class="card">
         <div class="card-body">
-            <form action="<?php echo base_url('admin/dataSiswa/tambahDataAksi') ?>" method="POST">
+            <?php foreach($siswa as $s): ?>
+            <form action="<?php echo base_url('admin/dataSiswa/updateDataAksi') ?>" method="POST">
                 <div class="form-group">
-                    <label>Id Siswa</label>
-                    <input type="text" name="id_siswa" class="form-control">
+                    <label>Id Guru</label>
+                    <input type="text" disabled name="id_siswa" class="form-control" value="<?php echo $s->id_siswa?>">
                     <?php echo form_error('id_siswa','<div class="text-small text-danger"></div>')?>
                 </div>
 
                 <div class="form-group">
                     <label>Username</label>
-                    <input type="text" name="username_siswa" class="form-control">
+                    <input type="text" name="username_siswa" class="form-control" value="<?php echo $s->username_siswa?>">
                     <?php echo form_error('username_siswa','<div class="text-small text-danger"></div>')?>
                 </div>
 
                 <div class="form-group">
                     <label>Password</label>
-                    <input type="text" name="password_siswa" class="form-control">
+                    <input type="text" name="password_siswa" class="form-control" value="<?php echo $s->password_siswa?>">
                     <?php echo form_error('password_siswa','<div class="text-small text-danger"></div>')?>
                 </div>
 
                 <div class="form-group">
                     <label>Nama Siswa</label>
-                    <input type="text" name="nama_siswa" class="form-control">
+                    <input type="text" name="nama_siswa" class="form-control" value="<?php echo $s->nama_siswa?>">
                     <?php echo form_error('nama_siswa','<div class="text-small text-danger"></div>')?>
                 </div>
 
                 <div class="form-group">
-                    <label>kelas</label>
-                    <input type="text" name="nama_kelas" class="form-control">
+                    <label>Kelas</label>
+                    <input type="text" name="nama_kelas" class="form-control" value="<?php echo $s->nama_kelas?>">
                     <?php echo form_error('nama_kelas','<div class="text-small text-danger"></div>')?>
                 </div>
 
                 <div class="form-group">
                     <label>Nama Orangtua</label>
-                    <input type="text" name="nama_orangtua" class="form-control">
+                    <input type="text" name="nama_orangtua" class="form-control" value="<?php echo $s->nama_orangtua?>">
                     <?php echo form_error('nama_orangtua','<div class="text-small text-danger"></div>')?>
                 </div>
 
                 <div class="form-group">
                     <label>Alamat</label>
-                    <input type="text" name="alamat" class="form-control">
+                    <input type="text" name="alamat" class="form-control" value="<?php echo $s->alamat?>">
                     <?php echo form_error('alamat','<div class="text-small text-danger"></div>')?>
                 </div>
 
                 <div class="form-group">
                     <label>Hak Akses</label>
-                    <select name="hak_akses" class="form-control">
+                    <input type="hidden" name="id_siswa" class="form-control" value="<?php echo $s->id_siswa?>">
+                    <select name="hak_akses" class="form-control" value="<?php echo $s->hak_akses?>">
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -61,6 +63,8 @@
 
                 <button type="submit" class="btn btn-success">Submit</button>
             </form>
+            <?php endforeach; ?>
         </div>
     </div>
+    
 </div>

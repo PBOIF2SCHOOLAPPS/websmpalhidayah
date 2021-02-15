@@ -10,10 +10,11 @@
         <tr>
             <th class="text-center">No</th>
             <th class="text-center">Id Guru</th>
+            <th class="text-center">Username</th>
+            <th class="text-center">Password</th>
             <th class="text-center">Nama Guru</th>
-            <th class="text-center">Alamat</th>
-            <th class="text-center">Jenis Kelamin</th>
             <th class="text-center">Status Guru</th>
+            <th class="text-center">Hak Akses</th>
             <th class="text-center">Action</th>
         </tr>
 
@@ -21,10 +22,11 @@
             <tr>
                 <td><?php echo $no++ ?></td>
                 <td><?php echo $g->id_guru?></td>
+                <td><?php echo $g->username?></td>
+                <td><?php echo $g->password?></td>
                 <td><?php echo $g->nama_guru?></td>
-                <td><?php echo $g->alamat?></td>
-                <td><?php echo $g->jenis_kelamin?></td>
                 <td><?php echo $g->status_guru?></td>
+                <td><?php echo $g->hak_akses?></td>
                 <td>
                     <center>
                         <a class="btn btn-sm btn-primary" href="<?php echo base_url('admin/dataGuru/updateData/'.$g->id_guru) ?>"><i class="fas fa-edit"></i></a>

@@ -10,8 +10,20 @@
             <form action="<?php echo base_url('admin/dataGuru/updateDataAksi') ?>" method="POST">
                 <div class="form-group">
                     <label>Id Guru</label>
-                    <input type="text" name="id_guru" class="form-control" value="<?php echo $g->id_guru?>">
+                    <input type="text" disabled name="id_guru" class="form-control" value="<?php echo $g->id_guru?>">
                     <?php echo form_error('id_guru','<div class="text-small text-danger"></div>')?>
+                </div>
+
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" name="username" class="form-control" value="<?php echo $g->username?>">
+                    <?php echo form_error('username','<div class="text-small text-danger"></div>')?>
+                </div>
+
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="text" name="password" class="form-control" value="<?php echo $g->password?>">
+                    <?php echo form_error('password','<div class="text-small text-danger"></div>')?>
                 </div>
 
                 <div class="form-group">
@@ -21,21 +33,26 @@
                 </div>
 
                 <div class="form-group">
-                    <label>Alamat</label>
-                    <input type="text" name="alamat" class="form-control" value="<?php echo $g->alamat?>">
-                    <?php echo form_error('alamat','<div class="text-small text-danger"></div>')?>
-                </div>
-
-                <div class="form-group">
-                    <label>Jenis Kelamin</label>
-                    <input type="text" name="jenis_kelamin" class="form-control" value="<?php echo $g->jenis_kelamin?>">
-                    <?php echo form_error('jenis_kelamin','<div class="text-small text-danger"></div>')?>
-                </div>
-
-                <div class="form-group">
                     <label>Status Guru</label>
-                    <input type="text" name="status_guru" class="form-control" value="<?php echo $g->status_guru?>">
+                    <select name="status_guru" class="form-control" value="<?php echo $g->status_guru?>">
+                         <option>Kepala Sekolah</option>
+                        <option>GURU TETAP</option>
+                        <option>GURU TIDAK TETAP</option>
+                        <option>STAFF SEKOLAH</option>
+                        <option>ADMIN SEKOLAH</option>
+                    </select>
                     <?php echo form_error('status_guru','<div class="text-small text-danger"></div>')?>
+                </div>
+
+                <div class="form-group">
+                    <label>Hak Akses</label>
+                    <input type="hidden" name="id_guru" class="form-control" value="<?php echo $g->id_guru?>">
+                    <select name="hak_akses" class="form-control" value="<?php echo $g->hak_akses?>">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                    <?php echo form_error('hak_akses','<div class="text-small text-danger"></div>')?>
                 </div>
 
                 <button type="submit" class="btn btn-success">Submit</button>

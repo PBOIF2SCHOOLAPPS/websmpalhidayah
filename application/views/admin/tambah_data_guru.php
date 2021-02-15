@@ -14,27 +14,43 @@
                 </div>
 
                 <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" name="username" class="form-control">
+                    <?php echo form_error('username','<div class="text-small text-danger"></div>')?>
+                </div>
+
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="text" name="password" class="form-control">
+                    <?php echo form_error('password','<div class="text-small text-danger"></div>')?>
+                </div>
+
+                <div class="form-group">
                     <label>Nama Guru</label>
                     <input type="text" name="nama_guru" class="form-control">
                     <?php echo form_error('nama_guru','<div class="text-small text-danger"></div>')?>
                 </div>
 
                 <div class="form-group">
-                    <label>Alamat</label>
-                    <input type="text" name="alamat" class="form-control">
-                    <?php echo form_error('alamat','<div class="text-small text-danger"></div>')?>
-                </div>
-
-                <div class="form-group">
-                    <label>Jenis Kelamin</label>
-                    <input type="text" name="jenis_kelamin" class="form-control">
-                    <?php echo form_error('jenis_kelamin','<div class="text-small text-danger"></div>')?>
-                </div>
-
-                <div class="form-group">
                     <label>Status Guru</label>
-                    <input type="text" name="status_guru" class="form-control">
+                    <select name="status_guru" class="form-control">
+                        <option>Kepala Sekolah</option>
+                        <option>GURU TETAP</option>
+                        <option>GURU TIDAK TETAP</option>
+                        <option>STAFF SEKOLAH</option>
+                        <option>ADMIN SEKOLAH</option>
+                    </select>
                     <?php echo form_error('status_guru','<div class="text-small text-danger"></div>')?>
+                </div>
+
+                <div class="form-group">
+                    <label>Hak Akses</label>
+                    <select name="hak_akses" class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                    <?php echo form_error('hak_akses','<div class="text-small text-danger"></div>')?>
                 </div>
 
                 <button type="submit" class="btn btn-success">Submit</button>

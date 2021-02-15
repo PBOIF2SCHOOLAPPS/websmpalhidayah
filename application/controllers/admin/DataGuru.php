@@ -29,17 +29,19 @@ class dataGuru extends CI_Controller
             $this->tambahData();
         } else {
             $id_guru    =$this->input->post('id_guru');
+            $username    =$this->input->post('username');
+            $password    =$this->input->post('password');
             $nama_guru    =$this->input->post('nama_guru');
-            $alamat    =$this->input->post('alamat');
-            $jenis_kelamin    =$this->input->post('jenis_kelamin');
             $status_guru    =$this->input->post('status_guru');
+            $hak_akses    =$this->input->post('hak_akses');
 
             $data=array(
                 'id_guru'   => $id_guru,
+                'username'   => $username,
+                'password'   => $password,
                 'nama_guru'   => $nama_guru,
-                'alamat'   => $alamat,
-                'jenis_kelamin'   => $jenis_kelamin,
                 'status_guru'   => $status_guru,
+                'hak_akses'   => $hak_akses,
             );
 
             $this->smpalhidayahModel->insert_data($data,'data_guru');
@@ -70,17 +72,19 @@ class dataGuru extends CI_Controller
             $this-updateData();
         } else {
             $id_guru    =$this->input->post('id_guru');
+            $username    =$this->input->post('username');
+            $password    =$this->input->post('password');
             $nama_guru    =$this->input->post('nama_guru');
-            $alamat    =$this->input->post('alamat');
-            $jenis_kelamin    =$this->input->post('jenis_kelamin');
             $status_guru    =$this->input->post('status_guru');
+            $hak_akses    =$this->input->post('hak_akses');
 
             $data=array(
                 
+                'username'   => $username,
+                'password'   => $password,
                 'nama_guru'   => $nama_guru,
-                'alamat'   => $alamat,
-                'jenis_kelamin'   => $jenis_kelamin,
                 'status_guru'   => $status_guru,
+                'hak_akses'   => $hak_akses,
             );
 
             $where = array (
@@ -98,10 +102,11 @@ class dataGuru extends CI_Controller
 
     public function _rules() {
         $this->form_validation->set_rules('id_guru','id guru','required');
+        $this->form_validation->set_rules('username','username','required');
+        $this->form_validation->set_rules('password','password','required');
         $this->form_validation->set_rules('nama_guru','nama guru','required');
-        $this->form_validation->set_rules('alamat','alamat','required');
-        $this->form_validation->set_rules('jenis_kelamin','jenis kelamin','required');
         $this->form_validation->set_rules('status_guru','status guru','required');
+        $this->form_validation->set_rules('hak_akses','hak akses','required');
     }
 
     public function deleteData($id_guru) {
