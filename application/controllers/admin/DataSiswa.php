@@ -30,8 +30,8 @@ class dataSiswa extends CI_Controller
             $this->tambahData();
         } else {
             $id_siswa    = $this->input->post('id_siswa');
-            $username_siswa    = $this->input->post('username_siswa');
-            $password_siswa    = md5($this->input->post('password_siswa'));
+            $username   = $this->input->post('username');
+            $password    = md5($this->input->post('password'));
             $nama_siswa    = $this->input->post('nama_siswa');
             $nama_kelas    = $this->input->post('nama_kelas');
             $nama_orangtua    = $this->input->post('nama_orangtua');
@@ -40,8 +40,8 @@ class dataSiswa extends CI_Controller
 
             $data = array(
                 'id_siswa'   => $id_siswa,
-                'username_siswa'   => $username_siswa,
-                'password_siswa'   => $password_siswa,
+                'username'   => $username,
+                'password'   => $password,
                 'nama_siswa'   => $nama_siswa,
                 'nama_kelas'   => $nama_kelas,
                 'nama_orangtua'   => $nama_orangtua,
@@ -78,8 +78,8 @@ class dataSiswa extends CI_Controller
             $this - updateData();
         } else {
             $id_siswa    = $this->input->post('id_siswa');
-            $username_siswa    = $this->input->post('username_siswa');
-            $password_siswa    = md5($this->input->post('password_siswa'));
+            $username    = $this->input->post('username');
+            $password   = md5($this->input->post('password'));
             $nama_siswa    = $this->input->post('nama_siswa');
             $nama_kelas    = $this->input->post('nama_kelas');
             $nama_orangtua    = $this->input->post('nama_orangtua');
@@ -88,8 +88,8 @@ class dataSiswa extends CI_Controller
 
             $data = array(
 
-                'username_siswa'   => $username_siswa,
-                'password_siswa'   => $password_siswa,
+                'username'   => $username,
+                'password'   => $password,
                 'nama_siswa'   => $nama_siswa,
                 'nama_kelas'   => $nama_kelas,
                 'nama_orangtua'   => $nama_orangtua,
@@ -113,8 +113,8 @@ class dataSiswa extends CI_Controller
     public function _rules()
     {
         $this->form_validation->set_rules('id_siswa', 'id siswa', 'required');
-        $this->form_validation->set_rules('username_siswa', 'username', 'required');
-        $this->form_validation->set_rules('password_siswa', 'password', 'required');
+        $this->form_validation->set_rules('username', 'username', 'required');
+        $this->form_validation->set_rules('password', 'password', 'required');
         $this->form_validation->set_rules('nama_siswa', 'nama siswa', 'required');
         $this->form_validation->set_rules('nama_kelas', 'kelas', 'required');
         $this->form_validation->set_rules('nama_orangtua', 'nama orangtua', 'required');

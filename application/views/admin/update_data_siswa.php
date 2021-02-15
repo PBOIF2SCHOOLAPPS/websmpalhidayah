@@ -16,14 +16,14 @@
 
                     <div class="form-group">
                         <label>Username</label>
-                        <input type="text" name="username_siswa" class="form-control" value="<?php echo $s->username_siswa ?>">
-                        <?php echo form_error('username_siswa', '<div class="text-small text-danger"></div>') ?>
+                        <input type="text" name="username" class="form-control" value="<?php echo $s->username ?>">
+                        <?php echo form_error('username', '<div class="text-small text-danger"></div>') ?>
                     </div>
 
                     <div class="form-group">
                         <label>Password</label>
-                        <input type="password" name="password_siswa" class="form-control" value="<?php echo $s->password_siswa ?>">
-                        <?php echo form_error('password_siswa', '<div class="text-small text-danger"></div>') ?>
+                        <input type="password" name="password" class="form-control" value="<?php echo $s->password ?>">
+                        <?php echo form_error('password', '<div class="text-small text-danger"></div>') ?>
                     </div>
 
                     <div class="form-group">

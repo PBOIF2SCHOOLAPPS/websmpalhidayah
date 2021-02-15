@@ -9,8 +9,8 @@ class Login extends CI_Controller
         if ($this->form_validation->run() == FALSE) {
             $data['title_header'] = "Login| SMP AL-HIDAYAH";
             $this->load->view('template/header', $data);
-            $this->load->view('login', $data);
-            $this->load->view('template/footer', $data);
+            $this->load->view('login');
+            $this->load->view('template/footer');
         } else {
             $username = $this->input->post('username');
             $password = $this->input->post('password');
@@ -19,7 +19,7 @@ class Login extends CI_Controller
 
             if ($cek == FALSE) {
                 $this->session->set_flashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-                <strong>AKUN SALAH</strong>
+                <strong>Username atau Password salah</strong>
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>');
                 redirect('login');

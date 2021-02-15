@@ -25,8 +25,8 @@
             <tr>
                 <td><?php echo $no++ ?></td>
                 <td><?php echo $s->id_siswa ?></td>
-                <td><?php echo $s->username_siswa ?></td>
-                <td><?php echo $s->password_siswa ?></td>
+                <td><?php echo $s->username ?></td>
+                <td><?php echo $s->password ?></td>
                 <td><?php echo $s->nama_siswa ?></td>
                 <td><?php echo $s->nama_kelas ?></td>
                 <td><?php echo $s->nama_orangtua ?></td>

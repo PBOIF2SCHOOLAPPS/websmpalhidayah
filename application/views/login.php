@@ -17,7 +17,7 @@
                                         <h1 class="h4 text-gray-900 mb-4">Selamat Datang</h1>
                                     </div>
                                     <?php echo $this->session->flashdata('pesan') ?>
-                                    <form class="user" method="post" action="<?php echo base_url('login'); ?>">
+                                    <form class="user" method="POST" action="<?php echo base_url('login'); ?>">
                                         <div class="form-group">
                                             <input type="text" class="form-control form-control-user" id="InputUSername" aria-describedby="usernam" placeholder="Masukan username">
                                             <?php echo form_error('username', '<div class="text-small text-danger"></div>') ?>
