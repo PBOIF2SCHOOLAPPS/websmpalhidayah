@@ -21,7 +21,7 @@
 
                 <div class="form-group">
                     <label>Password</label>
-                    <input type="text" name="password_siswa" class="form-control">
+                    <input type="password" name="password_siswa" class="form-control">
                     <?php echo form_error('password_siswa', '<div class="text-small text-danger"></div>') ?>
                 </div>
 

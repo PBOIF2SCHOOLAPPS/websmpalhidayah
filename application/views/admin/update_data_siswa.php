@@ -22,7 +22,7 @@
 
                     <div class="form-group">
                         <label>Password</label>
-                        <input type="text" name="password_siswa" class="form-control" value="<?php echo $s->password_siswa ?>">
+                        <input type="password" name="password_siswa" class="form-control" value="<?php echo $s->password_siswa ?>">
                         <?php echo form_error('password_siswa', '<div class="text-small text-danger"></div>') ?>
                     </div>
 
@@ -53,8 +53,8 @@
                     <div class="form-group">
                         <label>Hak Akses</label>
                         <input type="hidden" name="id_siswa" class="form-control" value="<?php echo $s->id_siswa ?>">
-                        <select name="hak_akses" disabled class="form-control" value="<?php echo $s->hak_akses ?>">
-                            <option value="3">Orang Tua</option>
+                        <select name="hak_akses" class="form-control" value="<?php echo $s->hak_akses ?>">
+                            <option value="3">Orangtua</option>
                         </select>
                         <?php echo form_error('hak_akses', '<div class="text-small text-danger"></div>') ?>
                     </div>

@@ -3,7 +3,7 @@
     <h1 class="display-4">SELAMAT DATANG</h1>
     <p class="lead">AL-HIDAYAH</p>
     <hr class="my-4">
-    <a class="btn btn-success btn-lg" href="#" role="button">MASUK</a>
+    <a class="btn btn-success btn-lg" href="<?php echo base_url('login'); ?>" role="button">MASUK</a>
 </div>
 
 <!-- Content -->

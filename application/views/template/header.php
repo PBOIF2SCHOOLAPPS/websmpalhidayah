@@ -27,7 +27,7 @@
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand mx-auto" href="#jumbotron">
+            <a class="navbar-brand mx-auto" href="<?php echo base_url('/home/home'); ?>">
                 <img src="<?php echo base_url() ?>assets/img/logo.png" width="40" height="auto" class="d-inline-block align-top" alt="" loading="lazy">
                 <span class="mt-2 ml-2 font-weight-bold" style="float:right;">ALHIDAYAH</span>
             </a>
