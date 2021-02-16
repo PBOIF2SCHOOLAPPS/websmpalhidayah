@@ -1,5 +1,10 @@
 <body>
-    <?= $ ?>
+
+    <div class="row justify-content-end mr-3  align-items-center" style="margin-top:90px;">
+        <p class="col-xl-2 text-right mt-3 mr-2" style="border-right : 2px #858796 solid"><?= $_SESSION['nama_guru'] ?> </p>
+        <a href="<?php echo base_url('guru/Dashboard/logout') ?>" class="btn btn-secondary col-m-2 text-center">Keluar</a>
+    </div>
+
     <div class="container" style="margin:120px auto 100px;">
         <h3 class="text-center text-dark mb-5 ">Konfirmasi Jadwal Tengok <br> SMP AL-HIDAYAH RAWAMERTA</h3>
         <div class="container konfirmasi-tengok">
@@ -16,37 +21,33 @@
                   </thead>
 
                   <tbody>
+                  <?php $no=1; ?>
+                  <?php foreach($konfirmasi as $k): ?>
                     <tr>
-                      <th scope="row">1</th>
-                      <td>23/04/2020</td>
-                       <td>Tatang Sulaeman</td>
-                       <td>Sulthon Naufal</td>
-                      
-                       <td>
-                       <input type="hidden" name="id_jadwal" value="id_jadwal">
-                        <a href="#"  class="btn btn-outline-success" >Terima</button>
-                        <input type="hidden">
-                        </td>
+                      <th scope="row"><?= $no ?></th>
+                      <td><?= $k->tanggal_jadwal ?></td>
+                       <td><?= $k->nama_orangtua?></td>
+                       <td><?= $k->nama_siswa?></td>
+                       <form action="<?php echo base_url('guru/Dashboard/updateDataAksi') ?>" method="POST">
                         <td>
-                            <button type="submit" class="btn btn-outline-warning" value="2" name="hak_akses">Tolak</button>
-                        </td>
-                  
-                    </tr>
+                            <input type="hidden" name="id_jadwal" value="<?= $k->id_jadwal?>">
+                            <?php if($k->hak_akses == 0) : ?>
+                                <button type="submit" class="btn btn-outline-success"  name="submit_terima">Terima</button>
+        
+                            </td>
+                            <td>
+                                <button type="submit" class="btn btn-outline-warning"  name="submit_tolak">Tolak</button>
+                            </td>
 
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>23/04/2020</td>
-                       <td>Tatang Sulaeman</td>
-                       <td>Sulthon Naufal</td>
-                       <form>
-                       <td>
-                            <a href="#"><button type="button" class="btn btn-outline-success">Terima</button></a>
-                        </td>
-                        <td>
-                            <a href="#"><button type="button" class="btn btn-outline-warning">Tolak</button></a>
-                        </td>
-                    </form>
+                            <?php else :?> 
+                                <button type="button" class="btn btn-outline-success" >Konfrimasi telah dilakukan</button>
+                             <?php endif; ?>
+
+                        </form>
                     </tr>
+                    <?php $no++ ?>
+                    <?php endforeach; ?>
+
                 </tbody>
             </table>
         </div>
