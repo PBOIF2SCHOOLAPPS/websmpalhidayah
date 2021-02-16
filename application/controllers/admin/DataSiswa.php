@@ -79,7 +79,7 @@ class dataSiswa extends CI_Controller
         } else {
             $id_siswa    = $this->input->post('id_siswa');
             $username    = $this->input->post('username');
-            $password   = md5($this->input->post('password'));
+            $password   = $this->input->post('password');
             $nama_siswa    = $this->input->post('nama_siswa');
             $nama_kelas    = $this->input->post('nama_kelas');
             $nama_orangtua    = $this->input->post('nama_orangtua');

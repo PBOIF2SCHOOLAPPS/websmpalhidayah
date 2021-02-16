@@ -31,7 +31,7 @@ class dataGuru extends CI_Controller
         } else {
             $id_guru    = $this->input->post('id_guru');
             $username    = $this->input->post('username');
-            $password    = md5($this->input->post('password'));
+            $password    = $this->input->post('password');
             $nama_guru    = $this->input->post('nama_guru');
             $status_guru    = $this->input->post('status_guru');
             $hak_akses    = $this->input->post('hak_akses');
@@ -75,7 +75,7 @@ class dataGuru extends CI_Controller
         } else {
             $id_guru    = $this->input->post('id_guru');
             $username    = $this->input->post('username');
-            $password    = md5($this->input->post('password'));
+            $password    = $this->input->post('password');
             $nama_guru    = $this->input->post('nama_guru');
             $status_guru    = $this->input->post('status_guru');
             $hak_akses    = $this->input->post('hak_akses');

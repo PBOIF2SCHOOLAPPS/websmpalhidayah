@@ -28,10 +28,6 @@
             <!-- Divider -->
             <hr class="sidebar-divider">
 
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Menu
-            </div>
 
             <!-- Nav Data -->
             <li class="nav-item">
@@ -51,17 +47,10 @@
             <hr class="sidebar-divider">
 
 
-            <!-- Ubah Password Nav -->
-            <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-key"></i>
-                    <span>Ubah Password</span></a>
-            </li>
-
             <!-- Keluar Nav -->
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url('admin/Dashboard/logout') ?>">
-                    <i class="fas fa-fw fa-table"></i>
+                    <i class="fas fa-sign-out-alt"></i>
                     <span>Keluar</span></a>
             </li>
 
