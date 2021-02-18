@@ -1,87 +1,84 @@
             html {
-            scroll-behavior: smooth;
-        }
-        /* LOGIN */
-        
-        .bg-cust-log {
-            background-color: rgba(3, 80, 111, 1);
-        }
-        
-        .btn-cust-log {
-            background-color: rgba(3, 80, 111, 1);
-            text-align: center;
-            color: white;
-        }
-        /* LOGIN */
-        
-        .custom-nav {
-            background-color: rgba(3, 80, 111, 1);
-        }
-        
-        .custom-text {
-            background-color: rgba(3, 80, 111, 1);
-        }
-        /* Navbar */
-        
-        .navbar {
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            opacity: 0.9;
-        }
-        /* HOME */
-        
-        .jumbotron {
-            background-image: url(../img/jumbotron_sekolah.jpg);
-            background-size: cover;
-            font-family: 'Montserrat', sans-serif;
-            background-repeat: no-repeat;
-            background-position: center;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-            height: 400px;
-            opacity: 0.9;
-        }
-        
-        .jumbotron .lead {
-            font-size: 38px;
-        }
-        
-        .nav-custom-home p {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 18px;
-        }
-        
-        .jumbotron .display-4 {
-            color: white;
-            font-size: 38px;
-            margin-top: 75px;
-            font-weight: bold;
-        }
-        
-        .jumbotron p {
-            font-size: 28px;
-            color: white;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-            font-weight: thin;
-            margin-top: 1em;
-        }
-        
-        .about-home p {
-            font-size: 12px;
-        }
-        
-        .zoom {
-            padding: 50px;
-            background-color: green;
-            transition: transform .2s;
-            /* Animation */
-            width: 200px;
-            height: 200px;
-            margin: 0 auto;
-        }
-        
-        .zoom:hover {
-            transform: scale(1.5);
-        }
+                scroll-behavior: smooth;
+            }
+            /* LOGIN */
+            
+            .bg-cust-log {
+                background-color: rgba(3, 80, 111, 1);
+            }
+            
+            .btn-cust-log {
+                background-color: rgba(3, 80, 111, 1);
+                text-align: center;
+                color: white;
+            }
+            /* LOGIN */
+            
+            .custom-nav {
+                background-color: rgba(3, 80, 111, 1);
+            }
+            
+            .custom-text {
+                background-color: rgba(3, 80, 111, 1);
+            }
+            /* Navbar */
+            
+            .navbar {
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                opacity: 0.9;
+            }
+            /* HOME */
+            
+            .jumbotron {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/jumbotron_sekolah.jpg);
+                background-size: cover;
+                font-family: 'Montserrat', sans-serif;
+                background-repeat: no-repeat;
+                background-position: center;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+                height: 400px;
+                opacity: 0.9;
+            }
+            
+            .nav-custom-home p {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 18px;
+            }
+            
+            .jumbotron .display-4 {
+                color: white;
+                font-size: 38px;
+                margin-top: 75px;
+                font-weight: bold;
+            }
+            
+            .jumbotron p {
+                font-size: 28px;
+                color: white;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+                font-weight: thin;
+                margin-top: 1em;
+            }
+            
+            .about-home p {
+                font-size: 12px;
+            }
+            
+            .zoom {
+                padding: 50px;
+                background-color: green;
+                transition: transform .2s;
+                /* Animation */
+                width: 200px;
+                height: 200px;
+                margin: 0 auto;
+            }
+            
+            .zoom:hover {
+                transform: scale(1.5);
+            }
             /* DESKTOP */
+            
             @media (min-width: 992px) {
                 .navbar {
                     height: 100px;
@@ -98,8 +95,12 @@
                 .figure-caption {
                     font-size: 18px !important;
                 }
+                #kontak {
+                    font-size: 32px;
+                }
             }
             /* Tablet */
+            
             @media (min-width: 768px) {
                 .jumbotron {
                     height: 800px;
@@ -109,15 +110,21 @@
                 }
                 @media (max-width:320px) {
                     .jumbotron .display-4 {
-                        font-size: 28px;
+                        font-size: 42px;
                     }
                     .jumbotron .lead {
-                        font-size: 20px;
+                        font-size: 44px;
                     }
                 }
                 @media (max-width:600px) {
                     #img {
                         width: 300px;
+                    }
+                    .jumbotron .display-4 {
+                        font-size: 28px;
+                    }
+                    .jumbotron .lead {
+                        font-size: 20px;
                     }
                 }
                 /* HOME */
